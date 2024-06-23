@@ -1,10 +1,14 @@
 import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import About from "./components/About";
 
 function App() {
   return (
-    <>
-      <h1 className="w text-9xl">hello world</h1>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
