@@ -1,0 +1,82 @@
+import React from 'react'
+ import { FaInstagram, FaFacebook, FaLinkedin, FaHeart } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
+ import { HashLink } from 'react-router-hash-link';
+
+
+function Footer() {
+  return (
+    <div>
+           <div className='footer-main bg-gradient-to-b from-[#D04992] to-[#272626] flex flex-col justify-start items-center w-screen h-auto md:h-[373px] font-poppins text-white'>
+                 <div className='footer-grid pt-12 h-[90%] w-[90%] grid grid-rows-3 md:grid-cols-[42%_16%_42%] justify-center items-start gap-3 md:gap-10 pb-[40px] md:pb-0'>
+                          <div className='Ieee-info h-[175px] flex flex-col justify-start md:mr-auto md:pl-5 xl:w-[471px] '>
+                                                  <img src="src\assets\Ieee-footer.png"  className='h-[46.84px]  w-[271px] mx-auto md:mx-0 '/>
+                                                  <p className="text-[15px] font-normal leading-[25px] list-items pt-[30px] text-center md:text-left">
+                                                   The Jadavpur University IEEE student branch, founded in 2010,
+                                                    belongs to the Kolkata section of Region 10 of the organization.
+                                                    We are a group of enthusiastic students who are promoting
+                                                    innovative ideas both within and outside the campus.
+                                                    </p>
+                           </div>
+                          <div className='Useful-links w-[172px] mx-auto pt-[10px] sm:pt-0 md:pr-[19px] md:pl-0 lg:pr-0 lg:pl-[10px]  '>
+                                                  <h4 className="footer-header text-[28px] font-normal leading-[25px]">Useful Links</h4>
+                                                   {/* <div className="list-div flex flex-col justify-between  w-[115px] h-[105px]  absolute ml-[25px] mt-[30px] "> */}
+                                                   <ul className='list-disc text-[20px] leading-9 ml-[25px] mt-[30px] pl-5 md:pl-0'>
+                                                   <li><HashLink smooth to="/" className="list-items transition-colors duration-150 ease-in-out hover:text-black">
+                                                   Home
+                                                   </HashLink></li> 
+                                                   <li><HashLink smooth to="/#about" className="list-items transition-colors duration-150 ease-in-out hover:text-black">
+                                                    About Us
+                                                    </HashLink></li> 
+                                                     <li><HashLink smooth to="/#contact" className="list-items transition-colors duration-150 ease-in-out hover:text-black">
+                                                     Contact
+                                                     </HashLink></li> 
+                                                    </ul>
+                                                    {/* </div> */}
+                          </div>
+                          <div className='Contact-Us-xyz h-[225px] flex flex-col justify-start items-center md:items-start  md:ml-auto md:w-[100%] md:pl-[8px] lg:w-[95%] lg:pl-10 '>
+                                                     <h4 className="footer-header text-[30px] font-normal leading-[25px] w-[166px] h-[25px]  ">Contact Us</h4>
+                                                     <div className='Contact-Us-details-xyz flex flex-col items-center text-center md:items-start md:text-left text-[19px] leading-[35px] pt-[20px]'>
+                                                     <p className="list-items">
+                                                      Jadavpur University
+                                                      </p>
+                                                      <p className="list-items">
+                                                      188, Raja S.C. Mallick Rd, Kolkata-700032, India
+                                                      </p>
+                                                      <span><span className="list-items font-bold">Phone: </span><span>+91 98361 05125</span></span>
+                                                      <div> <span className='font-bold'>Email: </span><span><a href="mailto:jaduniv.ieee@gmail.com">jaduniv.ieee@gmail.com</a></span></div>
+                                                      </div>
+                                                      <div className="social-links grid grid-cols-4 gap-8 pt-[15px] justify-evenly md:justify-between md:mr-[70%]  ">
+
+                                                      <HashLink to="https://www.linkedin.com/company/ieee-ju" target="blank">
+                                                      <FaLinkedin className="footer-icons text-xl   transition-colors duration-150 ease-in-out hover:text-black" />
+                                                          </HashLink>
+      
+                                                          
+                                                      <HashLink to="https://www.facebook.com/ieeejusb" target="blank">
+                                                      <FaFacebook className="footer-icons text-xl  transition-colors duration-150 ease-in-out  hover:text-black" />
+                                                      </HashLink>
+                                                      <HashLink to="https://www.instagram.com/_ieeeju/" target="blank">
+                                                       <FaInstagram className="footer-icons text-xl absolute transition-colors duration-150 ease-in-out hover:text-black" />
+                                                      </HashLink>
+                                                      <HashLink to="https://twitter.com/IeeeJadavpur" target="blank">
+                                                      <BsTwitterX className="footer-icons text-xl  transition-colors duration-150 ease-in-out hover:text-black" />
+                                                      </HashLink>
+                                                        </div>
+                          </div>
+                 </div>
+                 <div className="mx-auto h-[2px] w-[90vw] flex bg-[#4E4E4E] rounded "></div>
+                  <div className="flex flex-col justify-between items-center text-sm  h-[55px] text-[15px]">
+                              <p className="mt-2 mb-2">
+                              © Copyright IEEE-JUSB. All Rights Reserved
+                               </p>
+
+                  </div>
+
+           </div>
+
+    </div>
+  )
+}
+
+export default Footer

@@ -1,9 +1,13 @@
 import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import Footer from "./Components/Footer.jsx";
 
 function App() {
   return (
     <>
-      <h1 className="w text-9xl">hello world</h1>
+      <BrowserRouter>
+        <Footer />
+      </BrowserRouter>
     </>
   );
 }
