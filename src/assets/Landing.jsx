@@ -77,17 +77,17 @@ function Landing() {
                 <img src={logo} alt="logo" className='position: relative h-2/4 ml-8' />
                 <GiHamburgerMenu id='hamburger' className='position: absolute right-0 mr-6 text-3xl text-neutral-400 transition-all duration-200 sm:hidden' onClick={mobileResponsiveNavOption} />
                 <ul className='position: absolute right-0 flex h-full items-center text-neutral-300 mr-8 font-poppins invisible sm:visible'>
-                    <li className='ml-5 border-2 rounded-full pt-1 pb-1 pl-6 pr-6 border-neutral-500 hover:bg-gradient-to-b from-pink-950 to-pink-500'><button onClick={e => { return navButtonLinkUtility("#home") }}>Home</button></li>
-                    <li className='ml-5 border-2 rounded-full pt-1 pb-1 pl-6 pr-6 border-neutral-500 hover:bg-gradient-to-b from-pink-950 to-pink-500'><button onClick={e => { return navButtonLinkUtility("#about") }}>About</button></li>
-                    <li className='ml-5 border-2 rounded-full pt-1 pb-1 pl-6 pr-6 border-neutral-500 hover:bg-gradient-to-b from-pink-950 to-pink-500'><button onClick={e => { return navButtonLinkUtility("#episodes") }}>Episodes</button></li>
-                    <li className='ml-5 border-2 rounded-full pt-1 pb-1 pl-6 pr-6 border-neutral-500 hover:bg-gradient-to-b from-pink-950 to-pink-500'><button onClick={e => { return navButtonLinkUtility("#speakers") }}>Speakers</button></li>
-                    <li className='ml-5 border-2 rounded-full pt-1 pb-1 pl-6 pr-6 border-neutral-500 hover:bg-gradient-to-b from-pink-950 to-pink-500'><button onClick={e => { return navButtonLinkUtility("#contact") }}>Contact</button></li>
+                    <li className='ml-5 border-2 rounded-full pt-1 pb-1 pl-6 pr-6 border-neutral-500 hover:bg-gradient-to-b from-pink-950 to-pink-500'><button onClick={e => { return navButtonLinkUtility("#home") }} className='uppercase'>Home</button></li>
+                    <li className='ml-5 border-2 rounded-full pt-1 pb-1 pl-6 pr-6 border-neutral-500 hover:bg-gradient-to-b from-pink-950 to-pink-500'><button onClick={e => { return navButtonLinkUtility("#about") }} className='uppercase'>About</button></li>
+                    <li className='ml-5 border-2 rounded-full pt-1 pb-1 pl-6 pr-6 border-neutral-500 hover:bg-gradient-to-b from-pink-950 to-pink-500'><button onClick={e => { return navButtonLinkUtility("#episodes") }} className='uppercase'>Episodes</button></li>
+                    <li className='ml-5 border-2 rounded-full pt-1 pb-1 pl-6 pr-6 border-neutral-500 hover:bg-gradient-to-b from-pink-950 to-pink-500'><button onClick={e => { return navButtonLinkUtility("#speakers") }} className='uppercase'>Speakers</button></li>
+                    <li className='ml-5 border-2 rounded-full pt-1 pb-1 pl-6 pr-6 border-neutral-500 hover:bg-gradient-to-b from-pink-950 to-pink-500'><button onClick={e => { return navButtonLinkUtility("#contact") }} className='uppercase'>Contact</button></li>
                 </ul>
             </nav>
 
             {/* mobile responsive sidebar */}
             <aside id='sideBar' className='position: absolute mt-1/6 h-5/6 w-3/5 -right-full bg-gradient-to-b from-pink-900 to-pink-500 z-10 transition-all duration-200 ease-in-out sm:hidden'>
-                <ul className='text-neutral-300'>
+                <ul className='text-neutral-300 uppercase'>
                     <li>
                         <div className='h-16 flex justify-center items-center text-3xl font-poppins border-b-2'><a href="#home">Home</a></div>
                     </li>

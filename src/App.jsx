@@ -1,11 +1,13 @@
 import "./App.css";
 //importing components
 import Loading from './assets/Landing'
+import Episodes from './assets/Episode';
 
 function App() {
   return (
     <>
       <Loading/>
+      <Episodes/>
     </>
   );
 }
