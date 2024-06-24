@@ -1,9 +1,11 @@
 import "./App.css";
+//importing components
+import Loading from './assets/Landing'
 
 function App() {
   return (
     <>
-      <h1 className="w text-9xl">hello world</h1>
+      <Loading/>
     </>
   );
 }
