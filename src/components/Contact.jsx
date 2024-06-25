@@ -44,9 +44,9 @@ const Contact = () => {
       <div className="container lg:max-w-5xl flex flex-col lg:flex-row justify-center lg:items-center w-full">
         <div className="flex flex-col justify-between mb-8 md:mb-0 md:w-full lg:w-[50%] lg:mb-[85px] lg:mr-7">
           <h1 className="text-5xl md:text-7xl font-thin mb-6 text-center lg:text-left">CONTACT US</h1>
-          <div className="space-y-6 lg:pl-[50px] lg:mt-5 lg:text-[17px]">
-            <div className="flex items-center">
-              <FaPhoneAlt className="mr-3" />
+          <div className="space-y-7 lg:pl-[50px] lg:mt-5 lg:text-[17px]">
+            <div className="flex items-center ">
+              <FaPhoneAlt className="mr-2 " />
               <span>+91 8479808755</span>
             </div>
             <div className="flex items-center">
@@ -54,11 +54,11 @@ const Contact = () => {
               <span>jaduniv.ieee@gmail.com</span>
             </div>
             <div className="flex items-start">
-              <FaMapMarkerAlt className="mr-3" />
+              <FaMapMarkerAlt className="mr-2.5" />
               <span>Jadavpur University<br />188, Raja S.C. Mallick Rd, Jadavpur<br />Kolkata-700032</span>
             </div>
           </div>
-          <div className="flex space-x-6 mt-6 lg:pl-[58px]">
+          <div className="flex space-x-6 mt-6 lg:pl-[48px]">
             <FaTwitter className="hover:text-gray-500 text-2xl" />
             <FaInstagram className="hover:text-gray-500 text-2xl" />
             <FaDiscord className="hover:text-gray-500 text-2xl" />
@@ -109,7 +109,7 @@ const Contact = () => {
               />
             </div>
             <div className="mb-4">
-              <label className="block mb-2">Select Subject</label>
+              <label className="block mb-4 ml-4">Select Subject</label>
               <div className="flex flex-wrap gap-4">
                 <label className="flex items-center">
                   <input
