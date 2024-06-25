@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 //importing images
-import logo from '../../public/logo.png'
-import background from '../../public/background.png'
+import logo from '../assets/logo.png'
+import background from '../assets/background.png'
 //importing icon
 import { GiHamburgerMenu } from "react-icons/gi";
 
