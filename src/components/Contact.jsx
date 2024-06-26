@@ -108,8 +108,8 @@ const Contact = () => {
                 required
               />
             </div>
-            <div className="mb-5 mt-5">
-              <label className="block mb-4 ml-4">Select Subject</label>
+            <div className="mb-5 mt-5 py-4 sm:py-0">
+              <label className="block mb-6 sm:mb-4 ml-4">Select Subject</label>
               <div className="flex flex-wrap gap-4">
                 <label className="flex items-center">
                   <input
