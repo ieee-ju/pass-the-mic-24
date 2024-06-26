@@ -4,6 +4,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Loading from './components/Landing';
 import Speakers from './components/Speakers';
+import Footer from "./Components/Footer.jsx";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       </Routes> */}
       <Speakers />
       <Contact/>
+      <Footer />
     </BrowserRouter>
   );
 }
