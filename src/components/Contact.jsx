@@ -40,7 +40,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen lg:h-[695px] w-full flex items-center bg-[#171717] text-white justify-center p-4 md:p-0">
+    <div className="min-h-screen lg:h-[695px] w-full flex items-center bg-[#171717] text-white justify-center p-4 md:p-0 font-poppins">
       <div className="container lg:max-w-5xl flex flex-col lg:flex-row justify-center lg:items-center w-full">
         <div className="flex flex-col justify-between mb-8 md:mb-0 md:w-full lg:w-[50%] lg:mb-[85px] lg:mr-7">
           <h1 className="text-5xl md:text-7xl font-thin mb-6 text-center lg:text-left">CONTACT US</h1>
@@ -93,7 +93,7 @@ const Contact = () => {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="Email"
-                className="w-full p-4 bg-transparent border-b border-gray-700 focus:outline-none"
+                className="w-full p-4 py-6 bg-transparent border-b border-gray-700 focus:outline-none"
                 required
               />
             </div>
@@ -104,11 +104,11 @@ const Contact = () => {
                 value={formData.phone}
                 onChange={handleChange}
                 placeholder="Phone Number"
-                className="w-full p-4 bg-transparent border-b border-gray-700 focus:outline-none"
+                className="w-full p-4 py-6 bg-transparent border-b border-gray-700 focus:outline-none"
                 required
               />
             </div>
-            <div className="mb-4">
+            <div className="mb-5 mt-5">
               <label className="block mb-4 ml-4">Select Subject</label>
               <div className="flex flex-wrap gap-4">
                 <label className="flex items-center">
