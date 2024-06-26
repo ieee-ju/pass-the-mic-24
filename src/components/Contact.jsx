@@ -73,7 +73,7 @@ const Contact = () => {
                 value={formData.firstName}
                 onChange={handleChange}
                 placeholder="First Name"
-                className="p-4 bg-transparent border-b border-gray-700 focus:outline-none"
+                className="p-4 py-6 bg-transparent border-b border-gray-700 focus:outline-none"
                 required
               />
               <input
@@ -82,7 +82,7 @@ const Contact = () => {
                 value={formData.lastName}
                 onChange={handleChange}
                 placeholder="Last Name"
-                className="p-4 bg-transparent border-b border-gray-700 focus:outline-none"
+                className="p-4 py-6 bg-transparent border-b border-gray-700 focus:outline-none"
                 required
               />
             </div>
@@ -93,7 +93,7 @@ const Contact = () => {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="Email"
-                className="w-full p-4 py-6 bg-transparent border-b border-gray-700 focus:outline-none"
+                className="w-full p-4 py-7 sm:py-6 bg-transparent border-b border-gray-700 focus:outline-none"
                 required
               />
             </div>
@@ -104,7 +104,7 @@ const Contact = () => {
                 value={formData.phone}
                 onChange={handleChange}
                 placeholder="Phone Number"
-                className="w-full p-4 py-6 bg-transparent border-b border-gray-700 focus:outline-none"
+                className="w-full p-4 py-7 sm:py-6 bg-transparent border-b border-gray-700 focus:outline-none"
                 required
               />
             </div>
