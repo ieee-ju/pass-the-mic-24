@@ -1,14 +1,23 @@
 import "./App.css";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Loading from './components/Landing';
+import Speakers from './components/Speakers';
 import Footer from "./Components/Footer.jsx";
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Footer />
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+    <Loading/>
+      <About />
+{/*       <Routes>
+        <Route path="/about" element={<About />} />
+      </Routes> */}
+      <Speakers />
+      <Contact/>
+      <Footer />
+    </BrowserRouter>
   );
 }
 
