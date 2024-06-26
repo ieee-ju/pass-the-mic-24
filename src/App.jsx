@@ -1,13 +1,16 @@
 import "./App.css";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import About from "./components/About";
 import Contact from "./components/Contact";
+
 function App() {
   return (
-    <>
     <BrowserRouter>
-       <Contact/>
+      <Routes>
+        <Route path="/about" element={<About />} />
+      </Routes>
+      <Contact/>
     </BrowserRouter>
-    </>
   );
 }
 
