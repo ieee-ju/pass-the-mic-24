@@ -2,16 +2,18 @@ import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Loading from './components/Landing'
+import Loading from './components/Landing';
+import Speakers from './components/Speakers';
 
 function App() {
   return (
     <BrowserRouter>
     <Loading/>
       <About />
-      <Routes>
+{/*       <Routes>
         <Route path="/about" element={<About />} />
-      </Routes>
+      </Routes> */}
+      <Speakers />
       <Contact/>
     </BrowserRouter>
   );
