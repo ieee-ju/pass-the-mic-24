@@ -1,9 +1,12 @@
 import "./App.css";
-
+import { BrowserRouter } from "react-router-dom";
+import Contact from "./components/Contact";
 function App() {
   return (
     <>
-      <h1 className="w text-9xl">hello world</h1>
+    <BrowserRouter>
+       <Contact/>
+    </BrowserRouter>
     </>
   );
 }
