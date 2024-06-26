@@ -1,6 +1,7 @@
 import React, {useRef} from "react";
 import { FaTwitter, FaLinkedin } from "react-icons/fa6";
 import {useInView} from "framer-motion"
+import pratikImage from "./../assets/speakers/pratik_sinha.jpeg"
 
 function SpeakerCard(props) {
 	return (
@@ -61,7 +62,7 @@ function Speakers() {
 					<SpeakerCard 
                     name="PRATIK SINHA" 
                     designation="CEO, Alt News"
-                    picture="src/assets/speakers/pratik_sinha.jpeg"
+                    picture={pratikImage}
                     twitter="https://x.com/free_thinker"
                     linkedin="https://www.linkedin.com/in/pratiksinha/"
                     speakerNumber="1" />				
