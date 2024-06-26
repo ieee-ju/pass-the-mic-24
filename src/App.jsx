@@ -1,13 +1,18 @@
 import "./App.css";
-//importing components
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import About from "./components/About";
+import Contact from "./components/Contact";
 import Loading from './components/Landing'
-// import Episodes from './assets/Episode';
 
 function App() {
   return (
-    <>
-      <Loading/>
-    </>
+    <BrowserRouter>
+    <Loading/>
+      <Routes>
+        <Route path="/about" element={<About />} />
+      </Routes>
+      <Contact/>
+    </BrowserRouter>
   );
 }
 

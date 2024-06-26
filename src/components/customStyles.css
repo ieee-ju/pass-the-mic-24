@@ -1,0 +1,78 @@
+/* src/customStyles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-200px);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(320px);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 1s ease-in forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 1s ease-in forwards;
+}
+
+.clip-path-custom {
+  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.custom-underline {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-effect {
+    transition: background-image 0.3s ease;
+  }
+  
+  .hover-effect:hover {
+    background-image: url('path/to/hover.svg');
+  }
+
+  .clip-path-custom {
+    clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
+  }
+
+.custom-underline::before {
+    content: 'AB';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    border-bottom: 4px solid white;
+    animation: underline 0.0s forwards;
+}
+
+@keyframes underline {
+  from {
+    width: 0;
+  }
+  to {
+    width: 130px; /* Adjust this value to control the length of the underline */
+  }
+}
