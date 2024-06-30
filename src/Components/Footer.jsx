@@ -57,7 +57,7 @@ function Footer() {
 
                                                               <p className="list-items">Jadavpur University</p>
                                                               <p className="list-items">188, Raja S.C. Mallick Rd, Kolkata-700032, India</p>
-                                                              <span><span className="list-items font-bold">Phone: </span><span>+91 98361 05125</span></span>
+                                                              <span><span className="list-items font-bold">Phone: </span><span><a href="tel:+919836105125">+91 98361 05125</a></span></span>
                                                               <div> <span className='font-bold'>Email: </span><span><a href="mailto:jaduniv.ieee@gmail.com">jaduniv.ieee@gmail.com</a></span></div>
                                                     </div>
                                                               
@@ -83,7 +83,7 @@ function Footer() {
 
                   <div className="flex flex-col justify-between items-center text-sm  h-[55px] text-[15px]">
 
-                              <p className="mt-2 mb-2">© Copyright IEEE-JUSB. All Rights Reserved</p>
+                              <p className="mt-2 mb-2">&#169; Copyright IEEE-JUSB. All Rights Reserved</p>
 
                   </div>
 
