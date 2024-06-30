@@ -4,7 +4,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Loading from './components/Landing';
 import Speakers from './components/Speakers';
-import Footer from "./Components/Footer.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
