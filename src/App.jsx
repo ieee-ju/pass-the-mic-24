@@ -1,10 +1,10 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Loading from './components/Landing';
-import Speakers from './components/Speakers';
-import Footer from "./components/Footer.jsx";
+import About from "./Components/About";
+import Contact from "./Components/Contact";
+import Loading from './Components/Landing';
+import Speakers from './Components/Speakers';
+import Footer from "./Components/Footer.jsx";
 
 function App() {
   return (
