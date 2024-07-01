@@ -19,8 +19,8 @@ const About = () => {
   });
 
   return (
-    <div className="text-white bg-[#333232] w-full sm:h-full min-h-screen flex flex-col md:justify-start">
-      <div className="container mx-auto md:pt-10 px-4 sm:px-6 lg:px-8">
+    <section id='about' className="text-white bg-[#333232] w-full sm:h-full min-h-screen flex flex-col md:justify-start">
+      <div className="container mx-auto md:pt-10 px-4 mb-8 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center">
           <div className={`md:w-1/2 w-full px-4 `}>
             <div ref={ref} className={`${inView ? 'animate-slide-in-left' : ''}`}>
@@ -98,7 +98,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

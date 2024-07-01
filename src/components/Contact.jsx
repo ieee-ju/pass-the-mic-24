@@ -40,7 +40,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen lg:h-[695px] w-full flex items-center bg-[#171717] text-white justify-center p-4 md:p-0 font-poppins">
+    <section id='contact' className="min-h-screen lg:h-[695px] w-full flex items-center bg-[#171717] text-white justify-center p-4 md:p-0 font-poppins">
       <div className="container xl:max-w-6xl lg:max-w-5xl flex flex-col lg:space-x-8 lg:flex-row justify-center lg:items-center w-full">
         <div className="flex flex-col justify-between mb-8 md:mb-0 md:w-full lg:w-[50%] lg:mb-[85px] xl:mr-9">
           <h1 className="text-5xl md:text-7xl font-thin mb-6 text-center lg:text-left">CONTACT US</h1>
@@ -167,7 +167,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

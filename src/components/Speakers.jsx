@@ -45,7 +45,7 @@ function Speakers() {
     const isInView = useInView(ref,{once:true});
 	return (
 		<>
-			<section className="bg-[#171717] overflow-x-hidden">
+			<section id='speakers' className="bg-[#171717] overflow-x-hidden">
 				<h1 className="font-inter text-white text-5xl font-medium mb-16 px-12 md:px-20 pt-20" ref={ref}
                 style={{
                     transform: isInView || window.innerWidth<700? "none":"translateX(-200px)",

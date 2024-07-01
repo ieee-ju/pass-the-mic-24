@@ -6,7 +6,7 @@ import { BsTwitterX } from "react-icons/bs";
 
 function Footer() {
   return (
-    <div>
+    <section id='footer'>
            <div className='footer-main bg-gradient-to-b from-[#D04992] to-[#272626] flex flex-col justify-start items-center  h-auto md:h-[373px] font-poppins text-white'>
 
 
@@ -32,13 +32,13 @@ function Footer() {
                                                    {/* <div className="list-div flex flex-col justify-between  w-[115px] h-[105px]  absolute ml-[25px] mt-[30px] "> */}
 
                                                    <ul className='list-disc text-[20px] leading-9 ml-[25px] mt-[30px] pl-5 md:pl-0'>
-                                                          <li><HashLink smooth to="/" className="list-items transition-colors duration-150 ease-in-out hover:text-black">
+                                                          <li><HashLink smooth to="#home" className="list-items transition-colors duration-150 ease-in-out hover:text-black">
                                                           Home
                                                           </HashLink></li> 
-                                                          <li><HashLink smooth to="/#about" className="list-items transition-colors duration-150 ease-in-out hover:text-black">
+                                                          <li><HashLink smooth to="#about" className="list-items transition-colors duration-150 ease-in-out hover:text-black">
                                                           About Us
                                                           </HashLink></li> 
-                                                          <li><HashLink smooth to="/#contact" className="list-items transition-colors duration-150 ease-in-out hover:text-black">
+                                                          <li><HashLink smooth to="#contact" className="list-items transition-colors duration-150 ease-in-out hover:text-black">
                                                           Contact
                                                           </HashLink></li> 
 
@@ -89,7 +89,7 @@ function Footer() {
 
            </div>
 
-    </div>
+    </section>
   )
 }
 
