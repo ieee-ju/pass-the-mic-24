@@ -1,7 +1,7 @@
 import React, {useRef} from "react";
 import { FaTwitter, FaLinkedin } from "react-icons/fa6";
 import {useInView} from "framer-motion"
-import pratikImage from "../assets/speakers/pratik_sinha.jpeg"
+import Speaker1 from '../assets/speakers/Speaker1.webp'
 
 function SpeakerCard(props) {
 	return (
@@ -60,11 +60,11 @@ function Speakers() {
                     transition: "all 1.3s"
                 }}>
 					<SpeakerCard 
-                    name="PRATIK SINHA" 
-                    designation="CEO, Alt News"
-                    picture={pratikImage}
-                    twitter="https://x.com/free_thinker"
-                    linkedin="https://www.linkedin.com/in/pratiksinha/"
+                    name="SK SHAHNAWAZ" 
+                    designation="ASDE, SLB"
+                    picture={Speaker1}
+                    twitter=""
+                    linkedin="https://www.linkedin.com/in/skshahnawaz/"
                     speakerNumber="1" />				
 				</div>
 			</section>
