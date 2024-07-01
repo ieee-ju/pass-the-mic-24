@@ -40,18 +40,18 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen lg:h-[695px] w-full flex items-center bg-[#171717] text-white justify-center p-4 md:p-0">
-      <div className="container lg:max-w-5xl flex flex-col lg:flex-row justify-center lg:items-center w-full">
-        <div className="flex flex-col justify-between mb-8 md:mb-0 md:w-full lg:w-[50%] lg:mb-[85px] lg:mr-7">
+    <div className="min-h-screen lg:h-[695px] w-full flex items-center bg-[#171717] text-white justify-center p-4 md:p-0 font-poppins">
+      <div className="container xl:max-w-6xl lg:max-w-5xl flex flex-col lg:space-x-8 lg:flex-row justify-center lg:items-center w-full">
+        <div className="flex flex-col justify-between mb-8 md:mb-0 md:w-full lg:w-[50%] lg:mb-[85px] xl:mr-9">
           <h1 className="text-5xl md:text-7xl font-thin mb-6 text-center lg:text-left">CONTACT US</h1>
           <div className="space-y-7 lg:pl-[50px] lg:mt-5 lg:text-[17px]">
-            <div className="flex items-center ">
-              <FaPhoneAlt className="mr-2 " />
-              <span>+91 8479808755</span>
+            <div className="flex items-center">
+              <FaPhoneAlt className="mr-2" />
+              <a href="tel:+918479808755">+91 8479808755</a>
             </div>
             <div className="flex items-center">
               <FaEnvelope className="mr-3" />
-              <span>jaduniv.ieee@gmail.com</span>
+              <a href="mailto:jaduniv.ieee@gmail.com">jaduniv.ieee@gmail.com</a>
             </div>
             <div className="flex items-start">
               <FaMapMarkerAlt className="mr-2.5" />
@@ -73,7 +73,7 @@ const Contact = () => {
                 value={formData.firstName}
                 onChange={handleChange}
                 placeholder="First Name"
-                className="p-4 bg-transparent border-b border-gray-700 focus:outline-none"
+                className="p-4 py-6 bg-transparent border-b border-gray-700 focus:outline-none"
                 required
               />
               <input
@@ -82,7 +82,7 @@ const Contact = () => {
                 value={formData.lastName}
                 onChange={handleChange}
                 placeholder="Last Name"
-                className="p-4 bg-transparent border-b border-gray-700 focus:outline-none"
+                className="p-4 py-6 bg-transparent border-b border-gray-700 focus:outline-none"
                 required
               />
             </div>
@@ -93,7 +93,7 @@ const Contact = () => {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="Email"
-                className="w-full p-4 bg-transparent border-b border-gray-700 focus:outline-none"
+                className="w-full p-4 py-7 sm:py-6 bg-transparent border-b border-gray-700 focus:outline-none"
                 required
               />
             </div>
@@ -104,12 +104,12 @@ const Contact = () => {
                 value={formData.phone}
                 onChange={handleChange}
                 placeholder="Phone Number"
-                className="w-full p-4 bg-transparent border-b border-gray-700 focus:outline-none"
+                className="w-full p-4 py-7 sm:py-6 bg-transparent border-b border-gray-700 focus:outline-none"
                 required
               />
             </div>
-            <div className="mb-4">
-              <label className="block mb-4 ml-4">Select Subject</label>
+            <div className="mb-5 mt-5 py-4 sm:py-0">
+              <label className="block mb-6 sm:mb-4 ml-4">Select Subject</label>
               <div className="flex flex-wrap gap-4">
                 <label className="flex items-center">
                   <input
