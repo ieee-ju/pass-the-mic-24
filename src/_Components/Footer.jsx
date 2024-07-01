@@ -2,6 +2,7 @@ import React from 'react'
  import { FaInstagram, FaFacebook, FaLinkedin, FaHeart } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
  import { HashLink } from 'react-router-hash-link';
+ import logo from '../assets/Ieee-footer.png'
 
 
 function Footer() {
@@ -15,7 +16,7 @@ function Footer() {
 
 
                           <div className='Ieee-info h-[175px] flex flex-col justify-start md:mr-auto md:pl-5 xl:w-[471px] '>
-                                                  <img src="src\assets\Ieee-footer.png"  className='h-[46.84px]  w-[271px] mx-auto md:mx-0 '/>
+                                                  <img src={logo}  className='h-[46.84px]  w-[271px] mx-auto md:mx-0 '/>
 
                                                   <p className="text-[15px] font-normal leading-[25px] list-items pt-[30px] text-center md:text-left">
                                                    The Jadavpur University IEEE student branch, founded in 2010,
