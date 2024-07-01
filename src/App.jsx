@@ -1,9 +1,9 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import About from "./Components/About";
-import Contact from "./Components/Contact";
-import Landing from './Components/Landing';
-import Speakers from './Components/Speakers';
+import About from "./Components/About.jsx";
+import Contact from "./Components/Contact.jsx";
+import Landing from './Components/Landing.jsx';
+import Speakers from './Components/Speakers.jsx';
 import Footer from "./Components/Footer.jsx";
 
 function App() {
