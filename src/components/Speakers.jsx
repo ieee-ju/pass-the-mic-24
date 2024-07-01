@@ -1,7 +1,7 @@
 import React, {useRef} from "react";
 import { FaTwitter, FaLinkedin } from "react-icons/fa6";
 import {useInView} from "framer-motion"
-import pratikImage from "./../assets/speakers/pratik_sinha.jpeg"
+import pratikImage from "../assets/speakers/pratik_sinha.jpeg"
 
 function SpeakerCard(props) {
 	return (
@@ -46,9 +46,9 @@ function Speakers() {
 	return (
 		<>
 			<section className="bg-[#171717] overflow-x-hidden">
-				<h1 className="font-inter text-white text-5xl font-medium mb-16 px-20 pt-20" ref={ref}
+				<h1 className="font-inter text-white text-5xl font-medium mb-16 px-12 md:px-20 pt-20" ref={ref}
                 style={{
-                    transform: isInView? "none":"translateX(-200px)",
+                    transform: isInView || window.innerWidth<700? "none":"translateX(-200px)",
                     transition: "all 1s"
                 }}
                 >
@@ -56,7 +56,7 @@ function Speakers() {
 				</h1>
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-5 px-10 md:px-16 lg:px-20 w-full gap-y-20 gap-x-20" ref={ref}
                 style={{
-                    transform: isInView? "none":"translateX(500px)",
+                    transform: isInView || window.innerWidth<700? "none":"translateX(500px)",
                     transition: "all 1.3s"
                 }}>
 					<SpeakerCard 
