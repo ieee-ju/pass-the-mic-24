@@ -1,5 +1,5 @@
 import React, {useRef} from "react";
-import { FaTwitter, FaLinkedin } from "react-icons/fa6";
+import { FaInstagram, FaLinkedin } from "react-icons/fa6";
 import {useInView} from "framer-motion"
 import Speaker1 from '../assets/speakers/Speaker1.webp'
 
@@ -22,8 +22,8 @@ function SpeakerCard(props) {
 			</div>
             <div className="hidden transition" id={`speaker-${props.speakerNumber}-socials`}>
 			<div className="rounded-tl-lg py-1 pr-2 pl-3 -right-1.5 -bottom-4 flex gap-x-2 absolute bg-[#ababab]">
-				<a href={props.twitter} target="_blank">
-					<FaTwitter color="#00acee" size={18} />
+				<a href={props.instagram} target="_blank">
+					<FaInstagram color="#E1306C" size={18} />
 				</a>
 				<a href={props.linkedin} target="_blank">
 					<FaLinkedin color="#0a66c2" size={18} />
@@ -63,7 +63,7 @@ function Speakers() {
                     name="SK SHAHNAWAZ" 
                     designation="ASDE, SLB"
                     picture={Speaker1}
-                    twitter=""
+                    instagram="https://www.instagram.com/sks29/"
                     linkedin="https://www.linkedin.com/in/skshahnawaz/"
                     speakerNumber="1" />				
 				</div>
