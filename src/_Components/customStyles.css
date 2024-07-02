@@ -29,7 +29,9 @@
 .animate-slide-in-left {
   animation: slideInLeft 1s ease-in forwards;
 }
-
+.transition {
+  transition: all 0.8s ease-in-out;
+}
 .animate-slide-in-right {
   animation: slideInRight 1s ease-in forwards;
 }
