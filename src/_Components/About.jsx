@@ -29,7 +29,7 @@ const About = () => {
               ABOUT
               <span className="absolute bottom-0 left-0 w-[111px] h-1 bg-white"></span>
             </h1>
-            <p className="mb-4 font-poppins text-[22px] text-[#BFB8B8]">
+            <p className="mb-4 font-poppins text-[17px] md:text-[22px] text-[#BFB8B8]">
               Time to brew your coffee and revisit your Spotify while we set the stage and tune our microphones.<br />
               A specially curated series of weekly podcasts to warm up your winter weekends, keep your eyes on PASS THE MIC.
             </p>
@@ -41,14 +41,14 @@ const About = () => {
                 onMouseLeave={() => setIsHovered1(false)}
               >
                 {isHovered1 ? (
-                  <div className="relative w-full h-auto md:w-[396px] md:h-[65px] bg-[#FF93CD] text-white flex items-center justify-end clip-path-custom">
-                    <div className="text-end pl-2 pr-2 py-1 text-[16px] font-poppins">
-                      A series of five weekly podcasts to <br className="hidden sm:inline" />
+                  <div className="relative w-full h-auto md:w-[396px] md:h-[65px] bg-[#FF93CD] text-white flex items-center justify-end clip-path-custom transition-all duration-1000">
+                    <div className="text-end pl-2 pr-2 py-1 text-[13px] md:text-[16px] font-poppins">
+                      A series of five weekly podcasts <br className='md:hidden' /> to <br className="hidden sm:inline" />
                       be released in the weekends starting soon.
                     </div>
                   </div>
                 ) : (
-                  <div>
+                  <div className='transition-all duration-1000'>
                     <img src={podcastWrite} alt="" className="w-full h-[75px] md:h-[65px]" />
                   </div>
                 )}
@@ -60,13 +60,13 @@ const About = () => {
                 onMouseLeave={() => setIsHoveredDiv2(false)}
               >
                 {isHoveredDiv2 ? (
-                  <div className="relative w-full h-auto md:w-[525px] md:h-[65px] bg-[#FF93CD] md:p-0 text-white flex items-center justify-end clip-path-custom">
-                    <span className="text-end pl-2 py-1 pr-2 text-[15px] font-poppins">
-                      Handpicked and <br className="md:hidden" /> assorted topics and <br className="md:hidden" /> talks from one of the pioneers in the field, directly on your Spotify playlists.
+                  <div className="relative w-full h-auto md:w-[525px] md:h-[65px] bg-[#FF93CD] md:p-0 text-white flex items-center justify-end clip-path-custom transition-all duration-1000">
+                    <span className="text-end pl-2 py-1 pr-2 text-[13px] md:text-[15px] font-poppins">
+                      Handpicked and assorted topics <br className='md:hidden' /> and  talks from one of the pioneers <br className='md:hidden'/> in the field, directly on your Spotify playlists.
                     </span>
                   </div>
                 ) : (
-                  <div>
+                  <div className='transition-all duration-1000'>
                     <img src={liveWrite} alt="" className="w-full h-auto" />
                   </div>
                 )}
@@ -78,14 +78,14 @@ const About = () => {
                 onMouseLeave={() => setIsHoveredDiv3(false)}
               >
                 {isHoveredDiv3 ? (
-                  <div className="relative w-full h-auto md:w-[457px] md:h-[65px] bg-[#FF93CD] text-white flex items-center justify-end clip-path-custom">
-                    <span className="text-end pl-2 pr-3 py-1 text-[16px] font-poppins">
+                  <div className="relative w-full h-auto md:w-[457px] md:h-[65px] bg-[#FF93CD] text-white flex items-center justify-end clip-path-custom transition-all duration-1000">
+                    <span className="text-end pl-2 pr-3 py-1 text-[13px] md:text-[16px] font-poppins">
                       Spotify took us by the storm with #2020wrapped, <br className="hidden sm:inline" />
-                      and it's time we take it by the storm.
+                      and it's time we <br className='md:hidden'/> take it by the storm.
                     </span>
                   </div>
                 ) : (
-                  <div>
+                  <div className='transition-all duration-1000'>
                     <img src={SpotifyWrite} alt="" className="w-full h-auto" />
                   </div>
                 )}
