@@ -62,7 +62,7 @@ const About = () => {
                 {isHoveredDiv2 ? (
                   <div className="relative w-full h-auto md:w-[525px] md:h-[65px] bg-[#FF93CD] md:p-0 text-white flex items-center justify-end clip-path-custom transition-all duration-1000">
                     <span className="text-end pl-2 py-1 pr-2 text-[13px] md:text-[15px] font-poppins">
-                      Handpicked and assorted topics and  talks from one of the pioneers <br className='md:hidden'/> in the field, directly on your Spotify playlists.
+                      Handpicked and assorted topics <br className='md:hidden' /> and  talks from one of the pioneers <br className='md:hidden'/> in the field, directly on your Spotify playlists.
                     </span>
                   </div>
                 ) : (
@@ -81,7 +81,7 @@ const About = () => {
                   <div className="relative w-full h-auto md:w-[457px] md:h-[65px] bg-[#FF93CD] text-white flex items-center justify-end clip-path-custom transition-all duration-1000">
                     <span className="text-end pl-2 pr-3 py-1 text-[13px] md:text-[16px] font-poppins">
                       Spotify took us by the storm with #2020wrapped, <br className="hidden sm:inline" />
-                      and it's time we take it by the storm.
+                      and it's time we <br className='md:hidden'/> take it by the storm.
                     </span>
                   </div>
                 ) : (
