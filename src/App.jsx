@@ -1,18 +1,22 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Loading from './components/Landing';
-import Episode from './components/Episode';
+import About from "./_Components/About.jsx";
+import Contact from "./_Components/Contact.jsx";
+import Landing from './_Components/Landing.jsx';
+import Speakers from './_Components/Speakers.jsx';
+import Footer from "./_Components/Footer.jsx";
 
 function App() {
   return (
     <BrowserRouter>
-    <Loading/>
-      <Routes>
+      <Landing/>
+      <About />
+{/*       <Routes>
         <Route path="/about" element={<About />} />
-      </Routes>
+      </Routes> */}
+      <Speakers />
       <Contact/>
+      <Footer />
     </BrowserRouter>
   );
 }
