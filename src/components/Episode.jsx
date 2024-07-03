@@ -62,12 +62,6 @@ function Episode() {
                     <div id='content2' className='position: relative w-full h-auto mt-2 font-medium'>{value.details2}</div>
                     <div className='position: relative w-full h-auto flex items-center'>
                       <button className='bg-zinc-300 rounded-lg text-neutral-900 mt-4 w-3/4 pt-2 pb-2 pl-2 font-semibold text-left text-2xl cursor-pointer sm:w-60 sm:mt-2 active:scale-95'>Listen On</button>
-                      <div className='position: relative h-full w-1/4 flex items-center justify-center text-red-600'>
-                        <div className='container position: relative h-full w-fit' onClick={likeButton}>
-                          <FaRegHeart id='openHeart' className='position: absolute text-3xl mt-4'/>
-                          <FaHeart id='closedHeart' className='position: absolute text-5xl mt-4 hidden' />
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </>
