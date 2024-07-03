@@ -18,6 +18,24 @@ const About = () => {
     threshold: 0.1,
   });
 
+  function set1() {
+    setIsHovered1(true);
+    setIsHoveredDiv2(false);
+    setIsHoveredDiv3(false);
+  }
+
+  function set2() {
+    setIsHovered1(false);
+    setIsHoveredDiv2(true);
+    setIsHoveredDiv3(false);
+  }
+
+  function set3() {
+    setIsHovered1(false);
+    setIsHoveredDiv2(false);
+    setIsHoveredDiv3(true);
+  }
+
   return (
     <section id='about' className="text-white bg-[#333232] w-full sm:h-full min-h-screen flex flex-col md:justify-start">
       <div className="container mx-auto md:pt-10 px-4 mb-8 sm:px-6 lg:px-8">
@@ -37,7 +55,7 @@ const About = () => {
             <div className="space-y-10 flex flex-col mt-[50px] md:mt-[87px] items-end">
               <div
                 className={`flex flex-row justify-end items-end transition duration-300 ease-in`}
-                onMouseEnter={() => setIsHovered1(true)}
+                onMouseEnter={set1}
                 onMouseLeave={() => setIsHovered1(false)}
               >
                 {isHovered1 ? (
@@ -56,7 +74,7 @@ const About = () => {
               </div>
               <div
                 className="flex flex-row items-end"
-                onMouseEnter={() => setIsHoveredDiv2(true)}
+                onMouseEnter={set2}
                 onMouseLeave={() => setIsHoveredDiv2(false)}
               >
                 {isHoveredDiv2 ? (
@@ -74,7 +92,7 @@ const About = () => {
               </div>
               <div
                 className="flex flex-row items-end"
-                onMouseEnter={() => setIsHoveredDiv3(true)}
+                onMouseEnter={set3}
                 onMouseLeave={() => setIsHoveredDiv3(false)}
               >
                 {isHoveredDiv3 ? (
