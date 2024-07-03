@@ -5,6 +5,7 @@ import Contact from "./_Components/Contact.jsx";
 import Landing from './_Components/Landing.jsx';
 import Speakers from './_Components/Speakers.jsx';
 import Footer from "./_Components/Footer.jsx";
+import Episode from './_Components/Episode.jsx'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
 {/*       <Routes>
         <Route path="/about" element={<About />} />
       </Routes> */}
+      <Episode/>
       <Speakers />
       <Contact/>
       <Footer />
