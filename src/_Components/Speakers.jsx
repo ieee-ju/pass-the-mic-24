@@ -1,6 +1,7 @@
 import React, {useRef} from "react";
-import { FaTwitter, FaLinkedin } from "react-icons/fa6";
+import { FaInstagram, FaLinkedin } from "react-icons/fa6";
 import {useInView} from "framer-motion"
+import Speaker1 from '../assets/speakers/Speaker1.webp'
 
 function SpeakerCard(props) {
 	return (
@@ -21,8 +22,8 @@ function SpeakerCard(props) {
 			</div>
             <div className="hidden transition" id={`speaker-${props.speakerNumber}-socials`}>
 			<div className="rounded-tl-lg py-1 pr-2 pl-3 -right-1.5 -bottom-4 flex gap-x-2 absolute bg-[#ababab]">
-				<a href={props.twitter} target="_blank">
-					<FaTwitter color="#00acee" size={18} />
+				<a href={props.instagram} target="_blank">
+					<FaInstagram color="#E1306C" size={18} />
 				</a>
 				<a href={props.linkedin} target="_blank">
 					<FaLinkedin color="#0a66c2" size={18} />
@@ -44,10 +45,10 @@ function Speakers() {
     const isInView = useInView(ref,{once:true});
 	return (
 		<>
-			<section className="bg-[#171717] overflow-x-hidden">
-				<h1 className="font-inter text-white text-5xl font-medium mb-16 px-20 pt-20" ref={ref}
+			<section id='speakers' className="bg-[#171717] overflow-x-hidden">
+				<h1 className="font-inter text-white text-5xl font-medium mb-16 px-12 md:px-20 pt-20" ref={ref}
                 style={{
-                    transform: isInView? "none":"translateX(-200px)",
+                    transform: isInView || window.innerWidth<700? "none":"translateX(-200px)",
                     transition: "all 1s"
                 }}
                 >
@@ -55,15 +56,15 @@ function Speakers() {
 				</h1>
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-5 px-10 md:px-16 lg:px-20 w-full gap-y-20 gap-x-20" ref={ref}
                 style={{
-                    transform: isInView? "none":"translateX(500px)",
+                    transform: isInView || window.innerWidth<700? "none":"translateX(500px)",
                     transition: "all 1.3s"
                 }}>
 					<SpeakerCard 
-                    name="PRATIK SINHA" 
-                    designation="CEO, Alt News"
-                    picture="src/assets/speakers/pratik_sinha.jpeg"
-                    twitter="https://x.com/free_thinker"
-                    linkedin="https://www.linkedin.com/in/pratiksinha/"
+                    name="SK SHAHNAWAZ" 
+                    designation="ASDE, SLB"
+                    picture={Speaker1}
+                    instagram="https://www.instagram.com/sks29/"
+                    linkedin="https://www.linkedin.com/in/skshahnawaz/"
                     speakerNumber="1" />				
 				</div>
 			</section>
