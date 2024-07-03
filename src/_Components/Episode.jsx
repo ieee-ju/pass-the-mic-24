@@ -63,7 +63,7 @@ function Episode() {
   },[size])
 
   return (
-    <div id='episodes' className='container position: relative h-auto w-screen bg-neutral-900 flex flex-col items-center sm:max-w-full overflow-hidden'>
+    <section id='episodes' className='container position: relative h-auto w-screen bg-neutral-900 flex flex-col items-center sm:max-w-full overflow-hidden py-8'>
       <div id='header' className='container position: relative w-screen h-auto flex justify-center pt-4'>
         <div className='position: relative w-fit h-full font-inter text-slate-50 font-medium uppercase text-6xl'>
           <h1>Episodes</h1>
@@ -110,7 +110,7 @@ function Episode() {
           }
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

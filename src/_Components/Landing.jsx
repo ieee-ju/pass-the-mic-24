@@ -79,7 +79,7 @@ function Landing() {
                 <ul className='position: absolute right-0 flex h-full items-center text-neutral-300 mr-8 font-poppins invisible sm:visible'>
                     <li className='ml-5 border-2 rounded-full pt-1 pb-1 pl-6 pr-6 border-neutral-500 hover:bg-gradient-to-b from-pink-950 to-pink-500'><button onClick={e => { return navButtonLinkUtility("#home") }} className='uppercase'>Home</button></li>
                     <li className='ml-5 border-2 rounded-full pt-1 pb-1 pl-6 pr-6 border-neutral-500 hover:bg-gradient-to-b from-pink-950 to-pink-500'><button onClick={e => { return navButtonLinkUtility("#about") }} className='uppercase'>About</button></li>
-                    {/* <li className='ml-5 border-2 rounded-full pt-1 pb-1 pl-6 pr-6 border-neutral-500 hover:bg-gradient-to-b from-pink-950 to-pink-500'><button onClick={e => { return navButtonLinkUtility("#episodes") }} className='uppercase'>Episodes</button></li> */}
+                    <li className='ml-5 border-2 rounded-full pt-1 pb-1 pl-6 pr-6 border-neutral-500 hover:bg-gradient-to-b from-pink-950 to-pink-500'><button onClick={e => { return navButtonLinkUtility("#episodes") }} className='uppercase'>Episodes</button></li>
                     <li className='ml-5 border-2 rounded-full pt-1 pb-1 pl-6 pr-6 border-neutral-500 hover:bg-gradient-to-b from-pink-950 to-pink-500'><button onClick={e => { return navButtonLinkUtility("#speakers") }} className='uppercase'>Speakers</button></li>
                     <li className='ml-5 border-2 rounded-full pt-1 pb-1 pl-6 pr-6 border-neutral-500 hover:bg-gradient-to-b from-pink-950 to-pink-500'><button onClick={e => { return navButtonLinkUtility("#contact") }} className='uppercase'>Contact</button></li>
                 </ul>
