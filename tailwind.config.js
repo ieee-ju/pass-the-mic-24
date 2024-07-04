@@ -7,6 +7,9 @@ export default {
         poppins: ["Poppins", "sans-serif"],
         inter: ["Inter", "sans-serif"],
       },
+      textDecorationThickness: {
+        0.75: '9px',
+      }
     },
   },
   plugins: [],

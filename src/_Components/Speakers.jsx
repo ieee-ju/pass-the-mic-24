@@ -46,14 +46,15 @@ function Speakers() {
 	return (
 		<>
 			<section id='speakers' className="bg-[#171717] overflow-x-hidden">
-				<h1 className="font-inter text-white text-5xl font-medium mb-16 px-12 md:px-20 pt-20" ref={ref}
+				<h1 className="text-center font-inter text-white text-5xl font-medium mb-16 px-12 md:px-20 pt-20 underline decoration-0.75" ref={ref}
                 style={{
                     transform: isInView || window.innerWidth<700? "none":"translateX(-200px)",
-                    transition: "all 1s"
+                    transition: "all 1s",
                 }}
                 >
 					SPEAKERS
 				</h1>
+				{/* <span className="block h-1 bg-white underline position:absolute bottom-0 "></span> */}
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-5 px-10 md:px-16 lg:px-20 w-full gap-y-20 gap-x-20" ref={ref}
                 style={{
                     transform: isInView || window.innerWidth<700? "none":"translateX(500px)",
