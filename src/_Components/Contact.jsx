@@ -40,11 +40,11 @@ const Contact = () => {
   };
 
   return (
-    <section id='contact' className="min-h-screen lg:h-[695px] w-full flex items-center bg-[#171717] text-white justify-center p-4 md:p-0 font-poppins">
+    <section id='contact' className="min-h-screen lg:h-[695px] w-full flex items-center bg-[#171717] text-white justify-center p-4 md:p-0 md:pt-2 font-poppins">
       <div className="container xl:max-w-6xl lg:max-w-5xl flex flex-col lg:space-x-8 lg:flex-row justify-center lg:items-center w-full">
         <div className="flex flex-col justify-between mb-8 md:mb-0 md:w-full lg:w-[50%] lg:mb-[85px] xl:mr-9">
-          <h1 className="text-5xl md:text-7xl font-thin mb-6 text-center lg:text-left">CONTACT US</h1>
-          <div className="space-y-7 lg:pl-[50px] lg:mt-5 lg:text-[17px]">
+          <h1 className="text-5xl md:text-7xl font-light mb-6 text-center lg:text-left">CONTACT US</h1>
+          <div className="space-y-7 w-[300px] mt-5  mx-auto lg:mx-0 pl-[50px]   lg:text-[17px]">
             <div className="flex items-center">
               <FaPhoneAlt className="mr-2" />
               <a href="tel:+918479808755">+91 8479808755</a>
@@ -58,7 +58,7 @@ const Contact = () => {
               <span>Jadavpur University<br />188, Raja S.C. Mallick Rd, Jadavpur<br />Kolkata-700032</span>
             </div>
           </div>
-          <div className="flex space-x-6 mt-6 lg:pl-[48px]">
+          <div className="flex space-x-6 mt-6 mb-4 pr-7 lg:pl-[48px] responsive">
             <FaTwitter className="hover:text-gray-500 text-2xl" />
             <FaInstagram className="hover:text-gray-500 text-2xl" />
             <FaDiscord className="hover:text-gray-500 text-2xl" />
@@ -159,7 +159,7 @@ const Contact = () => {
                 required
               ></textarea>
             </div>
-            <div className="text-right mt-1">
+            <div className="text-right mt-1 mb-4">
               <button type="submit" className="px-6 py-2 bg-white text-gray-950 border border-gray-700 rounded hover:bg-gray-700 hover:text-white">
                 Send Message
               </button>
