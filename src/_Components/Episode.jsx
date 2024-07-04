@@ -102,7 +102,7 @@ function Episode() {
 
                     {/* button link division */}
                     <div className='position: relative sm:h-1/4 sm:ml-12 sm:mb-4'>
-                      <button className='bg-zinc-300 rounded-lg text-neutral-900 mt-4 w-3/4 pt-2 pb-2 pl-2 font-semibold text-left text-2xl cursor-pointer sm:w-60 sm:mt-2 active:scale-95 hover:scale-105 transition-all duration-100' onClick={() => { return buttonFunction(value.spotifyLink) }}>Listen On</button>
+                      <button className='bg-zinc-300 rounded-lg text-neutral-900 mt-4 w-3/4 p-2 font-semibold text-center text-2xl cursor-pointer sm:w-60 sm:mt-2 active:scale-95 hover:scale-105 transition-all duration-100' onClick={() => { return buttonFunction(value.spotifyLink) }}>Listen On</button>
                     </div>
                   </div>
                 </>

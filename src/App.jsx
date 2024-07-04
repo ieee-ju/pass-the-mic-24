@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter} from "react-router-dom";
 import About from "./_Components/About.jsx";
 import Contact from "./_Components/Contact.jsx";
 import Landing from './_Components/Landing.jsx';

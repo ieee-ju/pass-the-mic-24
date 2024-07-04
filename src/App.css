@@ -1,3 +1,24 @@
 html{
     scroll-behavior: smooth;
 }
+/* Custom scrollbar for WebKit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 9px; /* width of the entire scrollbar */
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black; /* color of the track */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #D53F8C, #9B2C68); /* gradient color for the thumb */
+    border-radius: 4px; /* roundness of the thumb */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #E11D96, #9B2C68); /* gradient color for the thumb on hover */
+  }
+  
