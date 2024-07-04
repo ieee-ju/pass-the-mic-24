@@ -54,7 +54,6 @@ function Speakers() {
                 >
 					SPEAKERS
 				</h1>
-				{/* <span className="block h-1 bg-white underline position:absolute bottom-0 "></span> */}
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-5 px-10 md:px-16 lg:px-20 w-full gap-y-20 gap-x-20" ref={ref}
                 style={{
                     transform: isInView || window.innerWidth<700? "none":"translateX(500px)",
