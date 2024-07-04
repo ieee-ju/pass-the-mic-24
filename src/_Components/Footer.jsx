@@ -27,27 +27,24 @@ function Footer() {
                            </div>
 
 
-                          <div className='Useful-links w-[178px] md:w-[185px] lg:w-[178px] mx-auto pt-[30px] sm:pt-0 md:pr-[26px] md:pl-0 lg:pr-0 lg:pl-[10px] md:pt-2 '>
-                                                  <h4 className="footer-header text-[28px] font-normal leading-[25px]">Useful Links</h4>
+                         <div className='Useful-links w-[178px] md:w-[185px] lg:w-[178px] mx-auto pt-[30px] sm:pt-0 md:pr-[26px] md:pl-0 lg:pr-0 lg:pl-[10px] md:pt-2 hidden sm:block'>
+  <h4 className="footer-header text-[28px] font-normal leading-[25px]">Useful Links</h4>
+  
+  {/* <div className="list-div flex flex-col justify-between  w-[115px] h-[105px]  absolute ml-[25px] mt-[30px] "> */}
+  
+  <ul className='list-disc text-[20px] leading-9 ml-[25px] mt-[30px] pl-5 md:pl-0'>
+    <li><HashLink smooth to="#home" className="list-items transition-colors duration-150 ease-in-out hover:text-black">
+      Home
+    </HashLink></li> 
+    <li><HashLink smooth to="#about" className="list-items transition-colors duration-150 ease-in-out hover:text-black">
+      About Us
+    </HashLink></li> 
+    <li><HashLink smooth to="#contact" className="list-items transition-colors duration-150 ease-in-out hover:text-black">
+      Contact
+    </HashLink></li> 
+  </ul>
+</div>
 
-                                                   {/* <div className="list-div flex flex-col justify-between  w-[115px] h-[105px]  absolute ml-[25px] mt-[30px] "> */}
-
-                                                   <ul className='list-disc text-[20px] leading-9 ml-[25px] mt-[30px] pl-5 md:pl-0'>
-                                                          <li><HashLink smooth to="#home" className="list-items transition-colors duration-150 ease-in-out hover:text-black">
-                                                          Home
-                                                          </HashLink></li> 
-                                                          <li><HashLink smooth to="#about" className="list-items transition-colors duration-150 ease-in-out hover:text-black">
-                                                          About Us
-                                                          </HashLink></li> 
-                                                          <li><HashLink smooth to="#contact" className="list-items transition-colors duration-150 ease-in-out hover:text-black">
-                                                          Contact
-                                                          </HashLink></li> 
-
-                                                  </ul>
-
-                                                  {/* </div> */}
-
-                          </div>
 
 
                           <div className='Contact-Us-xyz h-[225px] flex flex-col justify-start items-center  md:items-start  md:ml-auto md:pt-2 md:w-[96%] lg:w-[93%] md:pl-[10px] lg:pl-10 '>
