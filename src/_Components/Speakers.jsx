@@ -46,10 +46,10 @@ function Speakers() {
 	return (
 		<>
 			<section id='speakers' className="bg-[#171717] overflow-x-hidden">
-				<h1 className="font-inter text-white text-5xl font-medium mb-16 px-12 md:px-20 pt-20" ref={ref}
+				<h1 className="text-center font-inter text-white text-5xl font-medium mb-16 px-12 md:px-20 pt-20 underline decoration-0.75" ref={ref}
                 style={{
                     transform: isInView || window.innerWidth<700? "none":"translateX(-200px)",
-                    transition: "all 1s"
+                    transition: "all 1s",
                 }}
                 >
 					SPEAKERS
