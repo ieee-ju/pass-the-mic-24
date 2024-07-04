@@ -1,79 +1,69 @@
-import React, { useEffect, useState } from 'react'
-//importing images
-import logo from '../assets/logo.png'
-import background from '../assets/background.png'
-//importing icon
+import React, { useEffect, useState } from 'react';
+import logo from '../assets/logo.png';
+import background from '../assets/background.png';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from 'react-icons/md';
 import { motion, AnimatePresence } from 'framer-motion';
 
-//Important!! for each component set an id respective to th section for the outermost div
+
 
 function Landing() {
 
-    //time set
-    const date = "12 July 2024 11:00 PM" // format - date month year time(00:00) AM/PM
+    const date = "12 July 2024 11:00 PM" 
+    
+    const [days, setDays] = useState(null);
+    const [hours, setHours] = useState(null);
+    const [minutes, setMinutes] = useState(null);
+    const [seconds, setSeconds] = useState(null);
 
-    //DOM elements
-    const [hours,setHours] = useState(null)
-    const [minutes,setMinutes] = useState(null)
-    const [seconds, setSeconds] = useState(null)
-    const [isNavVisible,setNavVisible]=useState(false)
 
-    //functions
-
-    //mobile responsive navbar function
     const mobileResponsiveNavOption = () => {
-        setNavVisible(prevState => !prevState);
-        const sidebar = document.getElementById("sideBar")
-
+        const sidebar = document.getElementById("sideBar");
+        const hamburger = document.getElementById("hamburger");
 
         if (sidebar.classList.contains("right-0")) {
-            sidebar.classList.remove("right-0")
-            sidebar.classList.add("-right-full")
+            sidebar.classList.remove("right-0");
+            sidebar.classList.add("-right-full");
+            hamburger.classList.remove("rotate-180");
         } else {
-            sidebar.classList.remove("-right-full")
-            sidebar.classList.add("right-0")
+            sidebar.classList.remove("-right-full");
+            sidebar.classList.add("right-0");
+            hamburger.classList.add("rotate-180");
         }
-    }
+    };
 
-    //button as section link function
     const navButtonLinkUtility = (location) => {
-        window.location.href = location
-    }
+        window.location.href = location;
+    };
 
-    //timer function
     const timerFunction = () => {
-        const end = new Date(date)
-        const now = new Date()
-        const timeLeft = (end - now) / 1000
+        const end = new Date(date);
+        const now = new Date();
+        const timeLeft = (end - now) / 1000;
 
-        //convert into hours  
-        const hours = Math.floor(timeLeft / 3600)
-        const minutes = (Math.floor(timeLeft / 60) % 60)
-        const seconds = (Math.floor(timeLeft % 60))
-        setHours(hours < 10 ? `0${hours}` : `${hours}`)
-        setMinutes(minutes < 10 ? `0${minutes}` : `${minutes}`)
-        setSeconds(seconds < 10 ? `0${seconds}` : `${seconds}`)
+        const days = Math.floor(timeLeft / (3600 * 24));
+        const hours = Math.floor((timeLeft % (3600 * 24)) / 3600);
+        const minutes = Math.floor((timeLeft % 3600) / 60);
+        const seconds = Math.floor(timeLeft % 60);
 
-        return
-    }
+        setDays(days < 10 ? `0${days}` : `${days}`);
+        setHours(hours < 10 ? `0${hours}` : `${hours}`);
+        setMinutes(minutes < 10 ? `0${minutes}` : `${minutes}`);
+        setSeconds(seconds < 10 ? `0${seconds}` : `${seconds}`);
+    };
 
-    //effect
     useEffect(() => {
-        const interval = setInterval(timerFunction, 1000)
-        return () => clearInterval(interval)
-    },[window.onloadstart])
-
+        const interval = setInterval(timerFunction, 1000);
+        return () => clearInterval(interval);
+    }, []);
 
     return (
-        <section id='home' className='position: relative overflow-x-hidden w-screen h-screen sm:max-w-full'>
+        <section id='home' className='relative overflow-x-hidden w-screen h-screen sm:max-w-full'>
 
-            {/* background */}
-            <div className='container position: absolute w-full h-full sm:max-w-full'>
-                <img src={background} alt="baclground" className='position: relative h-full object-cover object-left sm:w-full sm:object-top' />
+
+            <div className='absolute w-full h-full sm:max-w-full'>
+                <img src={background} alt="background" className='relative h-full object-cover object-left sm:w-full sm:object-top' />
             </div>
-
             {/* navbar */}
             <nav className='position: relative w-full h-1/6 flex items-center'>
                 <img src={logo} alt="logo" className='position: relative h-2/4 ml-8' />
@@ -136,18 +126,38 @@ function Landing() {
                 </ul>
             </aside>
 
-            {/* timer */}
-            <div className='position: relative w-full h-5/6 flex flex-col justify-center sm:absolute sm:right-0 sm:w-3/5 sm:items-center'>
+
+            <div className='relative w-full h-5/6 flex flex-col justify-center sm:absolute sm:right-0 sm:w-3/5 sm:items-center'>
                 <div className='font-inter uppercase font-normal ml-6'>
                     <span className='text-white text-8xl'>Pass</span> <br />
                     <span className='text-white inline-block rotate-90 origin-top text-4xl'>the</span><span className='text-pink-500 text-8xl'>Mic</span>
                 </div>
-                <div className='ml-6 text-neutral-300 text-5xl border-2 border-neutral-400 w-fit rounded-lg pt-3 pb-3 pl-5 pr-5 mt-4 sm:pl-8 sm:pr-8 sm:tracking-wider'>
-                    <span id='hours'>{hours}</span> : <span id='minutes'>{minutes}</span> : <span id='seconds'>{seconds}</span>
+                <div className='ml-6 text-neutral-300 text-5xl border-2 border-neutral-400 w-fit rounded-lg pt-3 pb-3 pl-5 pr-5 mt-4 sm:pl-8 sm:pr-8 sm:tracking-wider flex flex-col items-center'>
+                <div className='flex items-center'>
+                    <div className='flex flex-col items-center '>
+                        <span className='text-[30px] md:text-[50px]' id='days'>{days}</span>
+                        {days > 1 ? <span className='text-[15px] md:text-[20px] pt-1'>Days</span> : <span className='text-[15px] md:text-[20px] pt-1'>Day</span>}
+                    </div>
+                    <span className='mx-2 md:text-[50px] px-1'>:</span>
+                    <div className='flex flex-col items-center'>
+                        <span className='text-[30px] md:text-[50px]' id='hours'>{hours}</span>
+                        {hours > 1 ? <span className='text-[15px] md:text-[20px] pt-1'>Hours</span> : <span className='text-[15px] md:text-[20px] pt-1'>Hour</span>}
+                    </div>
+                    <span className='mx-2 md:text-[50px] px-1'>:</span>
+                    <div className='flex flex-col items-center'>
+                        <span className='text-[30px] md:text-[50px]' id='minutes'>{minutes}</span>
+                        {minutes > 1 ? <span className='text-[15px] md:text-[20px] pt-1'>Minutes</span> : <span className='text-[15px] md:text-[20px] pt-1'>Minute</span>}
+                    </div>
+                    <span className='mx-2 md:text-[50px] px-1'>:</span>
+                    <div className='flex flex-col items-center'>
+                        <span className='text-[30px] md:text-[50px]' id='seconds'>{seconds}</span>
+                        {seconds > 1 ? <span className='text-[15px] md:text-[20px] pt-1'>Seconds</span> : <span className='text-[15px] md:text-[20px] pt-1'>Second</span>}
+                    </div>
+                </div>
                 </div>
             </div>
         </section>
-    )
+    );
 }
 
-export default Landing
+export default Landing;
