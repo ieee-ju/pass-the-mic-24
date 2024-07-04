@@ -16,8 +16,11 @@ function Landing() {
     const [minutes, setMinutes] = useState(null);
     const [seconds, setSeconds] = useState(null);
 
+    const [isNavVisible,setNavVisible]=useState(false)
+
 
     const mobileResponsiveNavOption = () => {
+        setNavVisible(prevState => !prevState);
         const sidebar = document.getElementById("sideBar");
         const hamburger = document.getElementById("hamburger");
 
