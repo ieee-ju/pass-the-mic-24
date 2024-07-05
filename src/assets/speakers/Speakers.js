@@ -1,4 +1,4 @@
-import Speaker1 from './Speaker1.webp'
+import Speaker1 from './Speaker1(1).webp'
 import Speaker2 from './Speaker2.webp'
 import SpeakerDummy from './SpeakerDummy.webp'
 
@@ -6,7 +6,7 @@ const speakers =[
     {
         "number" : 1,
         "name" : "SK SHAHNAWAZ",
-        "designation" :"ASDE, SLB",
+        "designation" :"ASDE at SLB, ex-Founder at Writee",
         "picture" : Speaker1,
         "instagram" : "https://www.instagram.com/sks29/",
         "linkedin" : "https://www.linkedin.com/in/skshahnawaz/"
