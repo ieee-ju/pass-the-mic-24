@@ -9,7 +9,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 function Landing() {
 
-    const date = "12 July 2024 11:00 PM" 
+    const date = "12 July 2024 8:00 PM" 
     
     const [days, setDays] = useState(null);
     const [hours, setHours] = useState(null);

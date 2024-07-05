@@ -111,6 +111,10 @@ function Episode() {
           }
         </div>
       </div>
+
+      <div className="text-center px-8 text-white font-semibold text-2xl my-4">
+        Stay tuned for more episodes...
+      </div>
     </section>
   )
 }
