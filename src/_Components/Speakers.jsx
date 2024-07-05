@@ -45,15 +45,17 @@ function Speakers() {
     const isInView = useInView(ref,{once:true});
 	return (
 		<>
-			<section id='speakers' className="bg-[#171717] overflow-x-hidden">
-				<h1 className="text-center font-inter text-white text-5xl font-medium mb-16 px-12 md:px-20 pt-20 underline decoration-0.75" ref={ref}
+			<section id='speakers' className="relative bg-[#171717] overflow-x-hidden flex flex-col items-center">
+				<h1 className="text-center font-inter text-white text-5xl font-medium mb-16 px-12 md:px-20 pt-20 pb-3 relative " ref={ref}
                 style={{
                     transform: isInView || window.innerWidth<700? "none":"translateX(-200px)",
                     transition: "all 1s",
                 }}
                 >
 					SPEAKERS
+					<span className="absolute bottom-0 left-0 ml-20  w-[150px]  h-1 bg-white"></span>
 				</h1>
+				
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-5 px-10 md:px-16 lg:px-20 w-full gap-y-20 gap-x-20" ref={ref}
                 style={{
                     transform: isInView || window.innerWidth<700? "none":"translateX(500px)",
