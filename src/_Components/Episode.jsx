@@ -96,8 +96,8 @@ function Episode() {
                       <div id='title' className='position: relative w-full h-auto flex justify-center font-semibold text-3xl text-center sm:justify-start'>{value.title}</div>
                       <div id='reference' className='position: relative w-full h-auto italic mt-2'>{value.reference}</div>
                       <div id='time' className='position: relative w-64 h-auto bold mt-2 text-xl p-2 text-center rounded-md bg-red-900'>{value.time}</div>
-                      <div id='content1' className='position: relative w-full h-auto mt-4 font-medium'>{limitText(value.details1)} <button onClick={()=>{return revealText(value.details1,"content1")}}>...</button></div>
-                      <div id='content2' className='position: relative w-full h-auto mt-2 font-medium'>{limitText(value.details2)} <button onClick={()=>{return revealText(value.details1,"content2")}}>...</button></div>
+                      <div id='content' className='position: relative w-full h-auto mt-4 font-medium'>{limitText(value.details)} <button onClick={()=>{return revealText(value.details,"content")}}>...</button></div>
+                      {/* <div id='content2' className='position: relative w-full h-auto mt-2 font-medium'>{limitText(value.details2)} <button onClick={()=>{return revealText(value.details2,"content2")}}>...</button></div> */}
                     </div>
 
                     {/* button link division */}
