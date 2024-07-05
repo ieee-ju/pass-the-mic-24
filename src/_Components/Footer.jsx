@@ -12,10 +12,10 @@ function Footer() {
 
 
 
-                 <div className='footer-grid pt-12 sm:h-[90%] w-[90%] grid grid-rows-3 md:grid-cols-[42%_16%_42%] justify-center items-start gap-6 md:gap-9 lg:gap-6 pb-[40px] md:pb-0'>
+                 <div className='footer-grid pt-12 sm:h-[90%] w-[90%] grid grid-rows-[40%_60%] sm:grid-rows-3 md:grid-cols-[42%_16%_42%] justify-center items-start sm:gap-6 md:gap-9 lg:gap-6 sm:pb-[40px] md:pb-0'>
 
 
-                          <div className='Ieee-info h-[175px] flex flex-col justify-start md:mr-auto md:pl-5 xl:w-[471px] '>
+                          <div className='Ieee-info h-auto sm:h-[175px] flex flex-col justify-start md:mr-auto md:pl-5 xl:w-[471px] '>
                                                   <img src={logo}  className='h-[46.84px]  w-[271px] mx-auto md:mx-0 '/>
 
                                                   <p className="text-[15px] font-normal leading-[25px] list-items pt-[30px] text-center md:text-left">
@@ -47,11 +47,11 @@ function Footer() {
 
 
 
-                          <div className='Contact-Us-xyz h-[225px] flex flex-col justify-start items-center  md:items-start  md:ml-auto md:pt-2 md:w-[96%] lg:w-[93%] md:pl-[10px] lg:pl-10 '>
+                          <div className='Contact-Us-xyz sm:h-[225px] flex flex-col justify-start items-center  md:items-start  md:ml-auto md:pt-2 md:w-[96%] lg:w-[93%] md:pl-[10px] lg:pl-10 pb-10 sm:pb-none'>
 
-                                                     <h4 className="footer-header text-[30px] font-normal leading-[25px] w-[166px] h-[25px] sm:mt-0 mt-16 ">Contact Us</h4>
+                                                     <h4 className="footer-header text-[27px] sm:text-[30px] font-normal leading-[25px] sm:w-[166px] sm:h-[25px] sm:mt-0 mt-16 ">Contact Us</h4>
 
-                                                     <div className='Contact-Us-details-xyz flex flex-col items-center text-center md:items-start md:text-left text-[19px] md:text-[17px] lg:text-[19px] leading-[35px] pt-[30px] md:pt-[25px]'>
+                                                     <div className='Contact-Us-details-xyz flex flex-col items-center text-center md:items-start md:text-left text-[16px] sm:text-[17px] lg:text-[19px] leading-[35px] pt-[30px] md:pt-[25px]'>
 
                                                               <p className="list-items">Jadavpur University</p>
                                                               <p className="list-items">188, Raja S.C. Mallick Rd, Kolkata-700032, India</p>
