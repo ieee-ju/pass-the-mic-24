@@ -1,31 +1,31 @@
 import React, {useRef} from "react";
 import { FaInstagram, FaLinkedin } from "react-icons/fa6";
 import {useInView} from "framer-motion"
-import Speaker1 from '../assets/speakers/Speaker1.webp'
+import speakers from "../assets/speakers/Speakers";
 
-function SpeakerCard(props) {
+function SpeakerCard({speaker}) {
 	return (
 		<div className="relative mx-auto lg:mx-0 w-fit" 
-        onMouseEnter={()=>document.querySelector(`#speaker-${props.speakerNumber}-socials`).classList.remove('hidden')} 
-        onMouseLeave={()=>document.querySelector(`#speaker-${props.speakerNumber}-socials`).classList.add('hidden')}
+        onMouseEnter={()=>document.querySelector(`#speaker-${speaker.number}-socials`).classList.remove('hidden')} 
+        onMouseLeave={()=>document.querySelector(`#speaker-${speaker.number}-socials`).classList.add('hidden')}
         >
-			<div className="aspect-square border-2 bg-gradient-to-b from-[#939192] to-[#6a254a] px-2 pt-2">
+			<div className=" border-2 bg-gradient-to-b from-[#939192] to-[#6a254a] px-2 pt-2">
 				<img
-					className=""
-					src={props.picture}
-					alt={props.name}
+					className="aspect-square object-cover"
+					src={speaker.picture}
+					alt={speaker.name}
 				/>
 			</div>
-			<div className="bg-[#d9d9d9] flex px-3 py-2 justify-between items-center">
-				<p className="font-[poppins] font-semibold">{props.name}</p>
-				<p className="font-[inter] text-[0.72rem]">{props.designation}</p>
+			<div className="bg-[#d9d9d9] px-3 py-2 flex flex-col items-center">
+				<p className="font-[poppins] font-semibold uppercase">{speaker.name}</p>
+				<p className="font-[inter] text-[0.72rem]">{speaker.designation}</p>
 			</div>
-            <div className="hidden transition" id={`speaker-${props.speakerNumber}-socials`}>
+            <div className="hidden transition" id={`speaker-${speaker.number}-socials`}>
 			<div className="rounded-tl-lg py-1 pr-2 pl-3 -right-1.5 -bottom-4 flex gap-x-2 absolute bg-[#ababab]">
-				<a href={props.instagram} target="_blank">
+				<a href={speaker.instagram} target="_blank">
 					<FaInstagram color="#E1306C" size={18} />
 				</a>
-				<a href={props.linkedin} target="_blank">
+				<a href={speaker.linkedin} target="_blank">
 					<FaLinkedin color="#0a66c2" size={18} />
 				</a>
 			</div>
@@ -59,13 +59,10 @@ function Speakers() {
                     transform: isInView || window.innerWidth<700? "none":"translateX(500px)",
                     transition: "all 1.3s"
                 }}>
-					<SpeakerCard 
-                    name="SK SHAHNAWAZ" 
-                    designation="ASDE, SLB"
-                    picture={Speaker1}
-                    instagram="https://www.instagram.com/sks29/"
-                    linkedin="https://www.linkedin.com/in/skshahnawaz/"
-                    speakerNumber="1" />				
+
+					{speakers.map((speaker)=> <SpeakerCard speaker={speaker}/>)}
+
+
 				</div>
 			</section>
 		</>

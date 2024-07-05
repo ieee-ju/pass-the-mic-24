@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useWindowSize } from "@uidotdev/usehooks"
 //importing details container script
-import episodeDetails from '../assets/detailsConstant'
+import episodeDetails from '../assets/Episodes'
 //importing react icons
 import { HiDotsHorizontal } from "react-icons/hi";
 
