@@ -56,22 +56,7 @@ function Landing() {
         return () => clearInterval(interval);
     }, []);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            if (isNavVisible) {
-                setNavVisible(false);
-                const sidebar = document.getElementById("sideBar");
-                const hamburger = document.getElementById("hamburger");
-                sidebar.classList.remove("right-0");
-                sidebar.classList.add("-right-full");
-                hamburger.classList.remove("rotate-180");
-            }
-        };
-        
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, [isNavVisible]);
-
+    
     return (
         <section id='home' className='relative overflow-x-hidden w-screen h-screen sm:max-w-full'>
             <div className='absolute w-full h-full sm:max-w-full'>
@@ -88,7 +73,7 @@ function Landing() {
                             animate={{ opacity: 1, scale: 1, rotate: 0 }}
                             exit={{ opacity: 0, scale: 0, rotate: 90 }}
                             transition={{ duration: 0.3 }}
-                            className='absolute right-0 mr-6 text-3xl text-neutral-300 sm:hidden z-20'
+                            className='fixed right-0 mr-6 text-3xl text-neutral-300 sm:hidden z-20'
                             onClick={mobileResponsiveNavOption}
                         >
                             <MdClose />
@@ -128,7 +113,7 @@ function Landing() {
             </nav>
 
             {/* mobile responsive sidebar */}
-            <aside id='sideBar' className='absolute top-0 w-[55vw] h-screen -right-full bg-gradient-to-b from-pink-900 to-pink-500 z-10 transition-all duration-300 ease-in-out sm:hidden '>
+            <aside id='sideBar' className='fixed top-0 w-[55vw] h-screen -right-full bg-gradient-to-b from-pink-900 to-pink-500 z-10 transition-all duration-300 ease-in-out sm:hidden '>
                 <ul className='text-neutral-300 uppercase mt-[46.67%]'>
                     <li>
                         <div className='flex justify-center items-center text-md font-poppins border-b-[2px] border-t-[2px]  py-2' onClick={mobileResponsiveNavOption}>
