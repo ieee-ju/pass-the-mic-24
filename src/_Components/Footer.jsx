@@ -49,7 +49,7 @@ function Footer() {
 
                           <div className='Contact-Us-xyz h-[225px] flex flex-col justify-start items-center  md:items-start  md:ml-auto md:pt-2 md:w-[96%] lg:w-[93%] md:pl-[10px] lg:pl-10 '>
 
-                                                     <h4 className="footer-header text-[30px] font-normal leading-[25px] w-[166px] h-[25px]  ">Contact Us</h4>
+                                                     <h4 className="footer-header text-[30px] font-normal leading-[25px] w-[166px] h-[25px] sm:mt-0 mt-16 ">Contact Us</h4>
 
                                                      <div className='Contact-Us-details-xyz flex flex-col items-center text-center md:items-start md:text-left text-[19px] md:text-[17px] lg:text-[19px] leading-[35px] pt-[30px] md:pt-[25px]'>
 
