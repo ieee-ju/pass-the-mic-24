@@ -47,7 +47,7 @@ const Contact = () => {
           <div className="space-y-7 w-[300px] mt-5  mx-auto lg:mx-0 pl-[50px]   lg:text-[17px]">
             <div className="flex items-center">
               <FaPhoneAlt className="mr-2" />
-              <a href="tel:+918479808755">+91 8479808755</a>
+              <a href="tel:+918910398827">+91 89103 98827</a>
             </div>
             <div className="flex items-center">
               <FaEnvelope className="mr-3" />
