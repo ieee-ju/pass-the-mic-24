@@ -20,7 +20,7 @@ const episodeDetails = [
         time : "2nd August, 2024",
         details: "A Unicorn at 23? Mark your calendars and wait with bated breath as the very competent, Rajit Bhattacharya, CEO of Data Sutram, spills the secrets of corporate world and steers the path-not-taken from being a student to a founder!",
         spotifyLink: "",
-        registerLink : ""
+        registerLink : "https://forms.gle/oSSpwiKGdEDrrZ488"
     }
 ]
 

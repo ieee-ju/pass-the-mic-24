@@ -6,7 +6,7 @@ import { MdClose } from 'react-icons/md';
 import { motion, AnimatePresence } from 'framer-motion';
 
 function Landing() {
-    const date = "12 July 2024 8:00 PM";
+    const date = "2 August 2024 7:00 PM";
 
     const [days, setDays] = useState(null);
     const [hours, setHours] = useState(null);
@@ -45,10 +45,10 @@ function Landing() {
         const minutes = Math.floor((timeLeft % 3600) / 60);
         const seconds = Math.floor(timeLeft % 60);
 
-        setDays(days < 10 ? `0${days}` : `${days}`);
-        setHours(hours < 10 ? `0${hours}` : `${hours}`);
-        setMinutes(minutes < 10 ? `0${minutes}` : `${minutes}`);
-        setSeconds(seconds < 10 ? `0${seconds}` : `${seconds}`);
+        setDays(days < 10 ? (days < 0? `00` : `0${days}` ): `${days}`);
+        setHours(hours < 10 ? (hours< 0? `00`:`0${hours}` ): `${hours}`);
+        setMinutes(minutes < 10 ? (minutes<0? `00`:`0${minutes}`) : `${minutes}`);
+        setSeconds(seconds < 10 ? (seconds<0? `00` : `0${seconds}`) : `${seconds}`);
     };
 
     useEffect(() => {

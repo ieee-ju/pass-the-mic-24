@@ -103,11 +103,11 @@ function Episode() {
                     </div>
 
                     <div className="flex flex-col sm:flex-row my-4 -sm:px-4 sm:ml-12 sm:mr-4 gap-4 sm:gap-8 -sm:justify-between">
-                      <a href={value.spotifyLink} className='bg-slate-200 rounded-xl px-8 py-2 flex flex-row justify-between sm:gap-4'>
+                      <a href={value.spotifyLink} className='bg-slate-200 rounded-xl px-8 py-2 flex flex-row justify-between sm:gap-4' target='_blank'>
                         <p className='my-auto font-semibold'>Listen On</p>
                         <FaSpotify size={25} />
                       </a>
-                      <a href={value.registerLink} className='bg-slate-200 rounded-xl px-8 py-2 flex flex-row justify-between sm:gap-4'>
+                      <a href={value.registerLink} className='bg-slate-200 rounded-xl px-8 py-2 flex flex-row justify-between sm:gap-4' target='_blank'>
                         <p className='my-auto font-semibold'>Register</p>
                         <AiOutlineForm size={25}/>
                       </a>
