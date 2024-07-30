@@ -72,12 +72,12 @@ function Episode() {
           <div id='borderDivision' className='position: relative w-3/4 h-1 bg-slate-400 mt-3'></div>
         </div>
       </div>
-      <div id='details' className='container position: relative w-full h-auto mt-14 pb-4 flex flex-col items-center'>
-        <div className='container position: relative overflow-hidden h-auto w-auto sm:w-11/12 border-4 border-slate-50 flex flex-col items-center pt-0 pb-8 sm:flex-row sm:pb-0'>
-          {
+      {
             episodeDetails.episodeDetails.map(value => {
               return (
                 <>
+      <div id='details' className='container position: relative w-full h-auto mt-14 pb-4 flex flex-col items-center'>
+        <div className='container position: relative overflow-hidden h-auto w-auto sm:w-11/12 border-4 border-slate-50 flex flex-col items-center pt-0 pb-8 sm:flex-row sm:pb-0'>
                   {/* header division */}
                   <div className='position: relative h-auto w-full -top-1 -left-1 sm:absolute sm:-left-0'>
                     <div id='headerLocationAssist' className='w-fit h-auto bg-orange-900 text-slate-50 font-inter uppercase font-medium text-3xl border-b-2 border-r-2 border-slate-50  sm:absolute sm:-right-1 sm:border-r-0 sm:border-l-2'>
@@ -113,12 +113,12 @@ function Episode() {
                       </a>
                     </div>
                   </div>
+                </div>
+              </div>
                 </>
               )
             })
           }
-        </div>
-      </div>
 
       <div className="text-center px-8 text-white font-semibold text-2xl my-4">
         Stay tuned for more episodes...
