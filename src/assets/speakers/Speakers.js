@@ -1,5 +1,6 @@
 import Speaker1 from './Speaker1(1).webp'
 import Speaker2 from './Speaker2.webp'
+import Speaker3 from './Speaker3.webp'
 import SpeakerDummy from './SpeakerDummy.webp'
 
 const speakers =[
@@ -18,6 +19,14 @@ const speakers =[
         "picture" : Speaker2,
         "instagram" : "https://www.instagram.com/rajit_bh/",
         "linkedin" : "https://www.linkedin.com/in/rajitbhattacharya/"
+    },
+    {
+        "number" : 3,
+        "name" : "Saptarshi Ghosh",
+        "designation" :"Design Engineer, Intel",
+        "picture" : Speaker3,
+        "instagram" : "https://www.instagram.com/sap_ghosh/",
+        "linkedin" : "https://www.linkedin.com/in/sapghosh/"
     },
     {
         "number" : 100,

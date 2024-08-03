@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect , useRef} from 'react'
 import { useWindowSize } from "@uidotdev/usehooks"
 //importing details container script
 import episodeDetails from '../assets/Episodes'
@@ -11,6 +11,8 @@ import { AiOutlineForm } from 'react-icons/ai';
 function Episode() {
   //window size variable
   let size = useWindowSize()
+
+  const contentRef = useRef(null);
   //like button js redirection
   const buttonFunction = (link) => {
     window.location.href = link
@@ -39,11 +41,12 @@ function Episode() {
     return content 
   }
   //text reveal function
-  const revealText = (text,elementID) =>{
-    const element = document.getElementById(elementID)
-    element.innerHTML = text
-    return 
-  }
+  const revealText = (text, elementRef) => {
+    const element = elementRef.current;
+    if (element) {
+      element.innerHTML = text;
+    }
+  };
   useEffect(()=>{
     const resizeEventHandeler=window.addEventListener("resize",()=>{
       overlap()
@@ -98,8 +101,7 @@ function Episode() {
                       <div id='title' className='position: relative w-full h-auto flex justify-center font-semibold text-3xl text-center sm:justify-start'>{value.title}</div>
                       <div id='reference' className='position: relative w-full h-auto italic mt-2'>{value.reference}</div>
                       <div id='time' className='position: relative w-64 h-auto bold mt-2 text-xl p-2 text-center rounded-md bg-red-900'>{value.time}</div>
-                      <div id='content' className='position: relative w-full h-auto mt-4 font-medium text-wrap'>{limitText(value.details)} <button onClick={()=>{return revealText(value.details,"content")}}>...</button></div>
-                      {/* <div id='content2' className='position: relative w-full h-auto mt-2 font-medium'>{limitText(value.details2)} <button onClick={()=>{return revealText(value.details2,"content2")}}>...</button></div> */}
+                      <div id='content' ref={contentRef} className='relative w-full h-auto mt-4 font-medium text-wrap'>{value.details}</div>
                     </div>
 
                     <div className="flex flex-col sm:flex-row my-4 -sm:px-4 sm:ml-12 sm:mr-4 gap-4 sm:gap-8 -sm:justify-between">
