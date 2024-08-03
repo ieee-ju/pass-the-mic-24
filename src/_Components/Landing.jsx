@@ -6,7 +6,7 @@ import { MdClose } from 'react-icons/md';
 import { motion, AnimatePresence } from 'framer-motion';
 
 function Landing() {
-    const date = "2 August 2024 6:05 PM";
+    const date = "7 August 2024 4:00 PM";
 
     const [days, setDays] = useState(null);
     const [hours, setHours] = useState(null);
